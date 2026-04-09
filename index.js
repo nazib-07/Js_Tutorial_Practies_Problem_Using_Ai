@@ -28,4 +28,20 @@ function checkCode(input){
 }
 document.write(checkCode(userInput));
 
+//problem solve:
+//1. Write a Program to reverse a string in JavaScript.
+let str = "Nazib";
+let result = str.split('').reverse().join('');
+console.log(result);
+
+//2. Write a Program to check whether a string is a palindrome string.
+let myFunction = (str)=>{
+    const myName = str.split('').reverse().join('');
+   return str === myName;
+}
+console.log(myFunction("nazibna"));
+console.log(myFunction("nazibizan"));
+
+//3. Find the largest number in an array in JavaScript.
+
 
