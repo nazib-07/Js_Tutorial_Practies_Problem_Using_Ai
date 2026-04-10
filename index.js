@@ -1,4 +1,4 @@
-let userInput = prompt("Enter 4 digite code: ");
+let userInput = prompt("Enter 4 digite code:");
 function myFunction (otp){
     let otpString = otp.toString();
     switch(otpString){
