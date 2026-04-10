@@ -166,3 +166,23 @@ function fun1 (pos1){
 }
 fun1('Bottom');
 }
+
+//Js Math() and Number () mehtods...
+const num = 4.5673;
+console.log(Math.trunc(num));
+
+let count = -100;
+console.log(Math.sign(count));
+let power = 5;
+console.log(Math.pow(power, 5));
+
+let squrRoot = 8;
+console.log(Math.sqrt(squrRoot));
+
+let absoluteValue = -5.69;
+console.log(Math.abs(absoluteValue));
+let coun = [3,10,5,8,50, 2];
+console.log(`Numbers are: ${coun} and type is ${typeof(coun)}`);
+console.log(`Max number is: ${Math.max(3,10,5,8,50, 2)} and min number is: ${Math.min(3,10,5,8,50, 2)}`);
+
+console.log (Math.floor((Math.random()*10))+1);
