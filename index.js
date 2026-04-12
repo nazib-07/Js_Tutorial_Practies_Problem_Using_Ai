@@ -1,21 +1,39 @@
-let userInput = prompt("Enter 4 digite code:");
-function myFunction (otp){
-    let otpString = otp.toString();
-    switch(otpString){
-        case "1234": 
-        case "5678":
-        case "0000":
-            console.log("Access granted");
-            break;
-        default:
-            if(otpString === "9999"){
-                console.log("OTP expired");;
-            } else{
-                console.log("Invalid OTP");
-            }
-    }
+//include and index method's problem solve..
+//1. problem
+const fruit = ['Mango', 'Banana', 'orange', 'lichi'];
+if(fruit.includes('Mango')){
+    console.log(`Yes, Mango is present`);
+}else{
+    console.log('Mango is not present.');
 }
-console.log(myFunction(userInput));
+
+//2.problem..
+const homanName = ['Nazib','Bulbul', 'Alif', 'Choton'];
+const findName = homanName.indexOf('Bulbul');
+if(homanName.includes('Bulbul')){
+    console.log(`Yes, Bulbul is present and index is ${findName}`);
+}else{
+    console.log('please find another name');
+}
+
+//3. problem..
+const nameList = ['Rimon', 'Rifaat', 'Rajeeb'];
+const findNamelist = nameList.indexOf('Rifaat');
+console.log(`Index is: ${findName}`);
+
+//4.problem..
+const city = ['Dhaka', 'CTG', 'Sylhet'];
+const addCity = city.push('Rajshahi');
+console.log(city);
+if(city.includes('rajshahi')){
+    console.log(`Yes, Rajshahi is present`);
+}else{
+    console.log('Check spelling');
+}
+
+//4.problem
+const playGame = ['Cricket', 'Football', 'Batminton'];
+console.log(playGame.includes('Chess'));
 
 ///Question on my versity mid exam:
 let userInput = String(prompt("Enter the code"));
@@ -214,3 +232,32 @@ console.log(Array.isArray(['Nazib']));//Return true.
 console.log(Array.from('Nazib'));
 let a = 200, b = 300, c = 400;
 console.log(Array.of(a,b,c));
+
+//
+let number = [10,20,30,40,50];
+let newAdd = number.push(60);
+console.log(number);
+
+let peopleName = ['Sajeeb', 'Sagor', 'Sakib', 'Nazib'];
+let newMember = peopleName.push('Sumon');
+console.log(peopleName);
+
+let game = ['palne','Bus', 'snake', 'fighting'];
+let removeGame = game.pop();
+console.log(game);
+
+let num = [24,36,48,60];
+let addNum = num.unshift(12);
+console.log(num);
+
+let bookName = ['DSP', 'Data Structure', 'Web development', 'Software requirement', 'Microwave and antenna'];
+console.log(bookName);
+let deleteBook = bookName.shift();
+console.log(bookName);
+//include method
+const picnic = ['Sakib', 'Rahim', 'karim','Jeaon'];
+if(picnic.includes('Sakib')){
+    console.log(`Let's do party`);
+}else{
+    console.log('Ghor ey jah beda');
+}
