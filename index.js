@@ -35,6 +35,66 @@ if(city.includes('rajshahi')){
 const playGame = ['Cricket', 'Football', 'Batminton'];
 console.log(playGame.includes('Chess'));
 
+//Loop (for...of loop) problem solve...
+//1. problem...
+const sub = ['Data Structure', 'Web development', 'Software development', 'Microwave'];
+for(const declear of sub){
+    console.log(declear);
+}
+
+//2. problem..
+const food = ['Kacci', 'Polaw', 'Biriani', 'Kala vuna'];
+for(const display_food of food){
+    console.log(display_food);
+}
+
+//3. problem..
+const xm = ['MCA', 'WEB Tech', 'MEA', 'SRE', 'SRM'];
+for(const done_xm of xm){
+    console.log(done_xm);
+}
+//While() loop practies..
+//1. problem
+let count = 1;
+while(count<=10){
+    console.log(`${count}: I want to become a web developer.`);
+    count++;
+}
+//2
+let one_twenty = 1;
+while(one_twenty<=20){
+    console.log(one_twenty);
+    one_twenty++;
+}
+
+//3. problem
+let multiply = 0;
+while(multiply<=10){
+    let result = multiply*3;
+    console.log(`Table of three: ${multiply} * 3 = ${result}`);
+    multiply++;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 ///Question on my versity mid exam:
 let userInput = String(prompt("Enter the code"));
 function checkCode(input){
