@@ -189,4 +189,28 @@ console.log (Math.floor((Math.random()*10))+1);
 //Array slice and splice method...
 let array = [0,1,2,3,4,5];
 console.log(array.slice(0,2), array ,array.splice(1,4), array);
-//when use slice and splice method it's manupulate the main array or array lenght..
+
+//ARray Methods....
+let demon_slayer = ['Tanjiro', 'Inoske', 'Tomioka', 'Giue'];
+let black_clover = ['Asta', 'Leivai', 'Youno', 'Yeami', 'Necth'];
+
+const all_heros = demon_slayer.concat(black_clover);
+console.log(all_heros);
+//Spread Operator method approch use to add or marge two arrays...
+const new_all_heros = [...demon_slayer, ...black_clover];
+console.log(new_all_heros);
+
+// Flat method solve the array into depth by depth. which means nested array would be marge by single array..
+let new_arr = [1,2,3,[4,5,6],7,8,[9, 10, 11]];
+const resule_arr = new_arr.flat(Infinity);
+console.log(resule_arr);
+
+//isArray, form, of method in array...
+
+console.log(Array.isArray('Nazib'));//false. because name not inside the sq.bracket []..
+
+console.log(Array.isArray(['Nazib']));//Return true.
+
+console.log(Array.from('Nazib'));
+let a = 200, b = 300, c = 400;
+console.log(Array.of(a,b,c));
