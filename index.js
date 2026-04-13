@@ -178,26 +178,104 @@ const result = family.father['age'] + family.mother['age'];
 console.log(`My grand father age is ${family.father['age']} and grand mother age ${family.mother['age']}`);
 console.log(`Total age of both ${result}`);
 
+//Object key problem solving..
+//1.
+const book = {
+    name:'Web Technology',
+    writer: 'Jhanker mahabub',
+    price: 200
+}
 
+const key = Object.keys(book);
+const value = Object.values(book);
+console.log(`Key use: ${key}`);
+console.log(`value use: ${value}`);
 
+//2..
+const article = {
+    title:'Learning js',
+    category: 'Programming'
+}
+const check = Object.keys(article);
+const chk = check.includes('author');
+console.log(check, chk);
+//solve another way..
+if('author' in article){
+    console.log('Yes, have author');
+}else {
+    console.log('No author');
+}
 
+//3.
+const laptop = {
+    brand: 'Dell',
+    model: 'Inspiron',
+    price: 45000
+}
 
+const valu = Object.values(laptop);
+for (const key in laptop){
+    const maan = laptop[key];
+    console.log(key,maan);
+}
 
+//4..
+const phone = {
+    brand: 'Samsung',
+    model: 'Galaxy S26',
+    price: 90000
+}
+const keyy = Object.keys(phone);
+for(let key of keyy){
+    console.log(key, phone[key]);
+}
 
+//5..
+const bike = {
+    brand:'Hero',
+    price: 120000,
+    model: 'Splendor'
+}
+console.log(`Values are: ${Object.values(bike)}`);
 
+//6..
+const boi = {
+    book1: 'Harry poter',
+    book2: 'The Hobbit',
+    book3: 'Game of Thrones'
+}
+const key1 = Object.keys(boi); 
+for(let k of key1){
+    console.log(k, boi[k]);
+}
 
+//7..
+const number = {
+    a:10,
+    b:20,
+    c:30,
+    d:40
+}
+let sum = 0;
+for(let a in number){
+    sum = sum + number[a];
+}
+console.log(sum);
 
+//8..
+const building = {
+    floors:10,
+    address:{
+        street:'Ayna mosque road',
+        city: 'Dhaka',
+    },
+    type: 'Commercial'
+}
 
+for(let val in building){
+    console.log(val, building[val]);
+}
 
-
-
-
-
-
-
-//Array slice and splice method...
-let array = [0,1,2,3,4,5];
-console.log(array.slice(0,2), array ,array.splice(1,4), array);
 
 //ARray Methods....
 let demon_slayer = ['Tanjiro', 'Inoske', 'Tomioka', 'Giue'];
