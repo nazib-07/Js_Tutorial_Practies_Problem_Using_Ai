@@ -357,7 +357,30 @@ function myRoutine(){
 }
 myRoutine();
 
+//function parameter problem solve..
+//1..
+function ageFind(birthYear) {
+    const currentYear = 2026;
+    let age = currentYear - birthYear;
+    if (age < 0) {
+        console.log('তুই এলিয়েন ভাই!!');
+    } else if (age > 60) {
+        console.log('তুই বুইড়া হইছোছ');
+    } else if (age > 23) {
+        console.log('তুই বেডা হইছিস');
+    } else {
+        console.log('এখনো যুয়ান তুই');
+    }
+}
+ageFind(2030);
 
+//2..
+function bazer(taka){
+    const price = 35;
+    let answer = taka/price;
+    console.log(`You can purches Lawo: ${Math.round(answer.toFixed(2))} Ta`);
+}
+bazer(100);
 
 
 
