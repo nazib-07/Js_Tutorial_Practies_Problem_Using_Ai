@@ -381,6 +381,63 @@ function bazer(taka){
     console.log(`You can purches Lawo: ${Math.round(answer.toFixed(2))} Ta`);
 }
 bazer(100);
+//3..
+function sellingPrice(price){
+    const profitPrice = 250;
+    console.log(`Selling price after given any item: ${price + profitPrice}`);
+}
+sellingPrice(100);
+
+//4..
+function spendTime(dailyHours){
+    const monthlyHour = dailyHours*30;
+    console.log(`Use phone in 30 day's ${monthlyHour} hours`);
+}
+spendTime(15);
+//function return problem solving..
+//1..
+function higherNumber(a){
+    if(a>10){
+        return true;
+    }else{
+        return false;
+    }
+}
+console.log(higherNumber(11));
+
+//2..
+function division(a){
+    if(a%13===0){
+        return true;
+    }else{
+        return false;
+    }
+}
+console.log(division(39));
+
+//3..
+function restrurent(rice, curry, drinks){
+    return rice+curry+drinks;
+}
+console.log(`খাবারের মোট বিল: ${restrurent(20, 50, 25)} টাকা`);
+
+//4..
+function numberCheck(a){
+    if(a>0){
+        return 'Positive';
+    }
+    else {
+        return a*-1;
+    }
+}
+console.log(numberCheck(2));
+
+
+
+
+
+
+
 
 
 
