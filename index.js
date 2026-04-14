@@ -453,7 +453,28 @@ function arrayAdd(array){
     return add;
 }
 console.log(`Addition result is ${arrayAdd ([5,20, 15, 56,25])}`);
+//8..
+// function sumOfNumbers(num){
+//     let sum = 0;
+//     for(const key of num){
+//         sum = sum + key;
+//     }
+//     return sum;
+// }
+// const result = sumOfNumbers([54,62,12,6]);
+// console.log(result);
 
+function sumOfNumbers(num) {
+    let sum = 0;
+    for (const key of num) {
+        if (key % 2 === 0) {
+            sum = sum + key;
+        }
+    }
+    return sum;
+}
+const result = sumOfNumbers([54,62,12,6]);
+console.log(result);
 
 
 
