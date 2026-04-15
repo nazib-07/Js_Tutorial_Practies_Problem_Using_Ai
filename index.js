@@ -475,26 +475,67 @@ function sumOfNumbers(num) {
 }
 const result = sumOfNumbers([54,62,12,6]);
 console.log(result);
+//8..
+function addResult(num) {
+    let sum = 0;
+    for (let key of num) {
+        if (key % 2 !== 0) {
+            sum = sum + key;
+        }
+    }
+    return sum;
+}
+console.log(addResult([5, 15, 8, 7]));
 
+//9..
+function smallArray(arr) {
+    if (arr[0] < arr[1]) {
+        return arr[0];
+    } else {
+        return arr[1];
+    }
+}
+console.log(`Small array ${smallArray([50, 100, 40, 30])}`);
 
+//10..
+function findAge(age) {
+    if (age < 18) {
+        return 18;
+    }
+    else if (age > 45) {
+        return 45;
+    }
+    else {
+        return age;
+    }
+}
 
+console.log(`My age is ${findAge(30)}`);
 
+//11..
+function oddArray(oddarray) {
+    let sum = 0;
+    for (const num of oddarray) {
+        if (num % 4 === 0) {
+            sum = sum + num;
+        }
+    }
+    return sum;
+}
 
+console.log(oddArray([2, 4, 5, 7, 8, 32, 45]));
 
+//12..
+function takeNumber(number) {
+    if (number < 20) {
+        return number * 2;
+    } else {
+        let divide = number / 20;
+        return divide;
+    }
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
+console.log(takeNumber(18));
 
 //ARray Methods....
 let demon_slayer = ['Tanjiro', 'Inoske', 'Tomioka', 'Giue'];
@@ -511,17 +552,7 @@ let new_arr = [1,2,3,[4,5,6],7,8,[9, 10, 11]];
 const resule_arr = new_arr.flat(Infinity);
 console.log(resule_arr);
 
-//isArray, form, of method in array...
-
-console.log(Array.isArray('Nazib'));//false. because name not inside the sq.bracket []..
-
-console.log(Array.isArray(['Nazib']));//Return true.
-
-console.log(Array.from('Nazib'));
-let a = 200, b = 300, c = 400;
-console.log(Array.of(a,b,c));
-
-//
+//Array push method...
 let number = [10,20,30,40,50];
 let newAdd = number.push(60);
 console.log(number);
